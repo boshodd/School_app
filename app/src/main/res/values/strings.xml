@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">School_app</string>
+    <string name="loginbtn">Login</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="logo">TODO</string>
+    <string name="details">Details</string>
+    <string name="exam">Exam</string>
+    <string name="result">Result</string>
+    <string name="todo">TODO</string>
+    <string name="home_icon">home icon</string>
+    <string name="profile_icon">Profile icon</string>
+    <string name="settings_icon">settings icon</string>
+    <string name="notification_icon">notification icon</string>
+    <string name="fees">Fees</string>
+    <string name="notes">Notes</string>
+    <string name="assignment">Assignment</string>
+    <string name="time_table">Time-table</string>
+    <string name="events">Events</string>
+    <string name="attendance">Attendance</string>
+    <string name="pending_ass">1. Software Engineering assignment   (Click me)
+    </string>
+    <string name="sign_up">Sign up</string>
+    <string name="confirm_password">confirm password</string>
+
+    <string name="home">Home</string>
+    <string name="cycling">Cycling</string>
+    <string name="bus">Bus</string>
+    <string name="plane">Plane</string>
+    <string name="login">Login/Logout</string>
+    <string name="profile">Profile</string>
+    <string name="logout">Logout</string>
+    <string name="rate">Rate us</string>
+    <string name="share">Share</string>
+    <string name="school_app">School app</string>
+    <string name="profilepic">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="dummy_stu">This will be Student Profile section</string>
+
+</resources>

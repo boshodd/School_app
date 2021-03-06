@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_up">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/border_radius"
+            android:hint="@string/username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="30dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.395"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RImage"
+            tools:ignore="RtlSymmetry" />
+
+        <EditText
+        android:id="@+id/password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+
+        android:background="@drawable/border_radius"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/cnfpassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border_radius"
+        android:hint="@string/confirm_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintVertical_bias="0.398"
+        tools:ignore="RtlSymmetry" />
+
+
+    <EditText
+        android:id="@+id/Rname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/border_radius"
+        android:hint="Name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cnfpassword"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RMother"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_radius"
+        android:hint="Mother's name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/RFather"
+        app:layout_constraintTop_toBottomOf="@+id/Rname"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RFather"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_radius"
+        android:hint="Father's name"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Rname"
+        app:layout_constraintEnd_toStartOf="@+id/RMother"
+        tools:ignore="RtlSymmetry" />
+
+
+        <ImageView
+            android:id="@+id/RImage"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="chooseImage"/>
+
+        <EditText
+        android:id="@+id/RClass"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border_radius"
+        android:hint="Class"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/RDiv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RFather"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RDiv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/border_radius"
+        android:hint="Div"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/RRollno"
+        app:layout_constraintStart_toEndOf="@+id/RClass"
+        app:layout_constraintTop_toBottomOf="@+id/RFather"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RRollno"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/border_radius"
+        android:hint="Roll no"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+
+        app:layout_constraintStart_toEndOf="@+id/RDiv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RMother"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RDob"
+        android:layout_width="152dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_radius"
+        android:hint="DOB"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RClass"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RPhoneno"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border_radius"
+        android:hint="Phone number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RRollno"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/RAddress"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/border_radius"
+        android:hint="Address"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RDob"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/fsign_upbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_radius"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RAddress" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
